@@ -65,4 +65,5 @@ This repository already contains the needed .vscode/launch.json file. The only t
 It also requires a valid dw.json file at the root that is configured for the sandbox to upload.
 
 ## Training Cartridge
+
 For training purposes, all your work should be done in the `app_training` cartridge."# osftraining" 
