@@ -14,11 +14,14 @@
         <iselse>
             <isinclude template="product/components/pricing/main" />
         </isif>
-
+        <isif condition="${!empty(product.discountPercentage)}">
+            <div class="discount-percentage">
+                ${Resource.msgf('best.deal.label', 'discount', null, product.discountPercentage)}
+            </div>
+        </isif>
+        </div>
         <isif condition="${pdict.display.ratings !== false}">
             <isinclude template="product/productTileFooter" />
         </isif>
-        <div class="product-test-class">custom css class example</div>
-    </div>
     <!-- END_dwmarker -->
 </div>
